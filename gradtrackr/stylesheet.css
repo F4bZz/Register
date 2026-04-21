@@ -83,7 +83,6 @@ ol {
     background-color: var(--colorA);
     width: 100%;
     height: auto;
-
 }
 .footer-title-container {
     padding: 15px;
@@ -154,12 +153,14 @@ ol {
     overflow-y: auto;
     min-height: 0;
     padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 .page-wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
+    
 }
 
 .empty-display-wrapper {
@@ -167,4 +168,10 @@ ol {
     justify-content: center;
     align-items: center;
     padding-top: 10vh;
+}
+
+.popup {
+    position: absolute;
+    display: none;
+    z-index: 9999;
 }

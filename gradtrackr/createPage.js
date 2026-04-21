@@ -12,7 +12,8 @@ if(params.get('title')){
         'title': params.get('title'),
         'subject': params.get('subject'),
         'date': params.get('date'),
-        'collab': 'h'
+        'collab': 'h',
+        'completed': false
     }
     
     let i = 0
