@@ -3,13 +3,28 @@
     margin: 0;
 }
 
-:root {
-    --colorA: rgb(24, 24, 24);
-    --colorB: rgb(12, 12, 12);
-    --highlightedText: rgb(238, 238, 238);
-    --semiHighlightedText: rgb(189, 189, 189);
-    --discreteText: rgb(104, 104, 104);
+@media (prefers-color-scheme: dark) {
+    :root {
+        --colorA: rgb(24, 24, 24);
+        --colorB: rgb(12, 12, 12);
+        --highlightedText: rgb(238, 238, 238);
+        --semiHighlightedText: rgb(189, 189, 189);
+        --discreteText: rgb(104, 104, 104);
+        --highlightedButton: rgb(26, 53, 88);
+    }
 }
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --colorA: rgb(223, 223, 223);
+        --colorB: rgb(245, 245, 245);
+        --highlightedText: rgb(39, 39, 39);
+        --semiHighlightedText: rgb(73, 73, 73);
+        --discreteText: rgb(104, 104, 104);
+        --highlightedButton: rgb(118, 136, 158);
+    }
+}
+
 
 
 body {
@@ -110,7 +125,7 @@ ol {
     height: 100%;
     border: none;
     border-radius: 100%;
-    background-color: #1a3558;
+    background-color: var(--highlightedButton);
     font-size: 30px;
     transition: 0.5s;
 }
