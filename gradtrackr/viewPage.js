@@ -1,5 +1,5 @@
 const params = new URLSearchParams(window.location.search);
-//if(!params.get('wi')){window.location.href = './'}
+if(!params.get('wi')){window.location.href = './'}
 
 let wi = params.get('wi')
 let data = JSON.parse(localStorage.getItem(`work${wi}`))
