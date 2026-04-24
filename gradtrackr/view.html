@@ -13,27 +13,37 @@
 </head>
 <body>
     <header class="main-header">
-            <div class="header-title-wrapper">
+        <div class="header-title-wrapper">
                 <div class="header-title-container">
                     <h2 class="header-title title"></h2>
 
                 </div>
             </div>
     </header>
+    
     <main class="work-data-display">
-        <h2 class="title" style="margin-bottom: 10px;">Title</h2>
-        
-        <p class="title">Matéria:</p>
-        <p class="subtitle" style="margin-bottom: 10px;">Subject</p>
-        <p class="title">Date</p>
-        <p class="subtitle" style="margin-bottom: 19px;">State</p>
+        <p class="title" style="margin-bottom: 10px;">Visão geral:</p>
 
-        <p class="title">Descrição e notas</p>
-        <p class="descrition subtitle">Description</p>
+        <div class="container work-data-container">
+            <h2 class="title" id="title-display">Title</h2>
+            <p class="subtitle" style="margin-bottom: 10px;" id="creator-display">Creator</p>
+
+            <p class="title">Matéria:</p>
+            <p class="subtitle" style="margin-bottom: 10px;" id="subject-display">Subject</p>
+            <p class="title">Data de entrega:</p>
+            <p class="subtitle" style="margin-bottom: 19px;" id="date-display">Date</p>
+            <p class="subtitle" style="margin-bottom: 19px;" id="state-display">State</p>
+            <div class="container description-container">
+                <p class="title">Descrição e notas</p>
+            <p class="descrition subtitle" id="description-display">Description</p>
+            </div>
+        </div>
     </main>
 
-    <footer class="main-footer" style="padding: 10px;">
-        <buutton class="danger-button delete-button paragraph">Excluir trabalho</buutton>
+    <footer style="padding: 10px; position: fixed; bottom: 0;">
+        <button class="submit-button paragraph" onclick="submitCurrentWork()" title="Marca como trabalho fializado e não será mais mostrado no menu">Concluir trabalho</button>
+        <button class="submit-button paragraph" onclick="clip()" title="Copia um texto para sua área de transferência para ser compartilhado">Copiar dados em JSON</button>
+        <button class="danger-button delete-button paragraph" onclick="deleteCurrentWork()" title="Exclui o trabalho">Excluir trabalho</button>
     </footer>
     <script src="./viewPage.js"></script>
 </body>

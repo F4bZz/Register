@@ -6,10 +6,9 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Inter&family=Nunito&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300&family=Varela+Round&display=swap" rel="stylesheet">
     <title>Criar trabalho</title>
 </head>
 <body>
@@ -22,11 +21,11 @@
     </header>
     <div class="page-content">
         <h3 class="work-data-indicator subtitle">Informações do trabalho</h3>
-        <div class="work-form-wrapper">
+        <div class="work-form-wrapper container">
             <form class="work-data-form" id="work-data-form" method="#">
-                <label for="title">Título do trabalho:</label><br>
+                <label for="title" class="title">Título do trabalho:</label><br>
                 <input id="title" type="text" name="title" required><br>
-                <label for="subject-input" >Matéria:</label><br>
+                <label for="subject-input" class="title">Matéria:</label><br>
                 <input list="subjects" id="subject-input" type="text" name="subject" required><br>
                 <datalist id="subjects">
                     <option value="Análise e met. para sistemas"></option>
@@ -44,12 +43,24 @@
                     <option value="Português"></option>
                     <option value="Química"></option>
                 </datalist>
-                <label for="date-input">Data de entrega:</label><br>
+                <label for="date-input" class="title">Data de entrega:</label><br>
                 <input id="date-input" type="date" name="date" required><br>
-                <label for="collaborators">Participantes(grupo)</label><br>
+                <label for="collaborators" class="title">Participantes(grupo)</label><br>
                 <input id="collaborators" type="number" oninput="updateCollabList(true);">
-                <ol id="collaborators-list"></ol>
+                <div class="container collab-list-container">
+                    <ol id="collaborators-list"></ol>
+                </div>
+                <label for="description-input" class="title">Descrição e notas:</label>
+                <textarea id="description-input" class="subtitle"></textarea>
                 <input type="submit" id="submit-button">
+            </form>
+        </div>
+        <h1 class="title" style="width: 100%; text-align: center; margin-top: 20px; margin-bottom: 20px;">OU</h1>
+        <div class="json-input-wrapper container">
+            <form>
+                <label for="json-input" class="title" required>Inserir dados em JSON</label>
+                <input type="text" id="json-input">
+                <input type="submit">
             </form>
         </div>
     </div>

@@ -46,6 +46,7 @@ body {
     font-family: "Inter";
     font-weight: 300;
     padding-left: 10px;
+    font-size: 15px;
 }
 
 .paragraph {
@@ -64,6 +65,10 @@ ol {
     flex-direction: column;
     gap: 10px;
     padding: 10px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .main-header {
@@ -198,16 +203,82 @@ ol {
     background-color: var(--dangerButton);
     color: rgb(184, 84, 84);
     border-radius: 100px;
-    transition: 0.5s;
+    transition: 0.4s;
+    border: none;
 }
 
 .danger-button:hover {
-    background-color: rgb(190, 35, 35);
-    box-shadow: 0 0 15px rgb(255, 103, 103);
+    background-color: rgb(80, 28, 28);
 }
 
 .delete-button {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.submit-button {
+    border: none;
+    background-color: var(--colorA);
+    border-radius: 100px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+.work-data-container {
+    background-color: var(--colorA);
+}
+
+.description-container {
+    border: 1px solid rgb(39, 39, 39);
+    color: rgb(185, 78, 78);
+}
+
+input, textarea {
+    border: 1px solid rgb(39, 39, 39);
+    background-color: var(--colorA);
+    border-radius: 100px;
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    padding-left: 20px;
+    color: var(--semiHighlightedText);
+    margin-bottom: 8px;
+    margin-top: 3px;
+    
+}
+
+textarea {
+    resize: none;
+    height: auto;
+    border-radius: 10px;
+}
+
+input, textarea:focus {
+    outline: none;
+}
+
+label {
+    color: var(--highlightedText);
+}
+
+.work-form-wrapper {
+    background-color: var(--colorA);
+}
+
+.collab-list-container {
+    background-color: var(--colorB);
+    border: 1px solid rgb(39, 39, 39);
+    margin-bottom: 10px;
+}
+
+.json-input-wrapper {
+    background-color: var(--colorA);
 }
