@@ -32,7 +32,7 @@ history.replaceState({}, "", window.location.pathname)
 function updateCollabList(t) {
     let n = Math.round(document.getElementById('collaborators').value)-1
     let list = document.getElementById('collaborators-list')
-let listLineModel = '<li><input style="width: 80%; border-top-right-radius: 0; border-bottom-right-radius: 0;" type="text" placeholder="Nome do aluno" class="collaborator-name-input cName" oninput="updateCollabList(false)"><input style="width: 20%; border-top-left-radius: 0; border-bottom-left-radius: 0;" type="number" placeholder="Número" class="collaborator-number-input cNumber" oninput="updateCollabList(false)"></ul>'
+    let listLineModel = '<li><input style="width: 80%; border-top-right-radius: 0; border-bottom-right-radius: 0;" type="text" placeholder="Nome do aluno" class="collaborator-name-input cName" oninput="updateCollabList(false)"><input style="width: 20%; border-top-left-radius: 0; border-bottom-left-radius: 0;" type="number" placeholder="Número" class="collaborator-number-input cNumber" oninput="updateCollabList(false)"></ul>'
     
     
     if(t){
@@ -50,6 +50,3 @@ let listLineModel = '<li><input style="width: 80%; border-top-right-radius: 0; b
     
 }
 
-document.getElementById('work-data-form').addEventListener("submit", (e) => {
-  const data = new FormData(document.getElementById('work-data-form'))
-});
