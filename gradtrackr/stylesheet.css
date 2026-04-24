@@ -244,7 +244,7 @@ a {
 input, textarea {
     border: 1px solid rgb(39, 39, 39);
     background-color: var(--colorA);
-    border-radius: 100px;
+    border-radius: 10px;
     width: 100%;
     height: auto;
     padding: 8px;
@@ -258,7 +258,6 @@ input, textarea {
 textarea {
     resize: none;
     height: auto;
-    border-radius: 10px;
 }
 
 input, textarea:focus {
